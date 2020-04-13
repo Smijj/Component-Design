@@ -1,0 +1,130 @@
+/* 
+Colours:
+Highlight: #530b7a
+Background: gainsboro
+Main: lightgrey
+*/
+
+/* ----- Header ----- */
+.title {
+    display: flex;
+	align-items: center; 
+	background-color: gainsboro;
+	display: inline-flex;
+	font-family: 'Trebuchet MS', serif;
+}
+#logo {
+	height: 100px;
+	width: 100px;
+}
+h1 {
+	top: 0;
+	display: inline;
+}
+.menubuttons {
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.menubuttons a {
+	display: block;
+    color: black;
+    padding: 5px 24px;
+    text-decoration: none;
+    transition: background-color, color, 0.4s;
+}
+.menubuttons a:hover {
+    color: white;
+	background-color: #3f075d;
+}
+
+/* ----- Navigation ----- */
+nav {
+	padding: 0 15% 0;
+	background: #530b7a;
+    overflow: hidden;
+    min-height: 30px;
+}
+nav > ul {
+    display: flex;
+    flex-flow: wrap row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+nav > ul > li {
+    margin: 0 auto 0;
+}
+nav a {
+    display: block;
+    color: white;
+    margin: auto 0;
+    padding: 15px 25px 15px;
+    text-decoration: none;
+    transition: background-color 0.4s;
+	font-family: Verdana, serif;
+}
+nav a:hover {
+    background-color: #3f075d;
+}
+
+/* ----- Body ----- */
+body {
+    margin: 0px;
+    background-color: gainsboro;
+    Font-family: 'Segoe UI';
+}
+main {
+    margin: 10px 10px 0;
+    width: 80%;
+}
+
+/* ----- General Articles ----- */
+
+
+/* ----- Main Articles ----- */
+
+
+/* Feature Article */
+
+/* Recent Article */
+
+/* Scrolling Articles */
+
+
+/* ----- Right Sidebar ----- */
+.sideArticles {
+    width: 20%;
+    height: min-content;
+    margin: 10px 10px 10px;
+    text-align: center;
+    background-color: lightgrey;
+}
+.sideHeader {
+    margin: 10px 0 10px;
+}
+.sideList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+.sideList a {
+    display: block;
+    padding: 2px 0 2px;
+    text-decoration: none;
+    color: black;
+    transition: background-color, color, 0.4s;
+}
+.sideList a:hover{
+    background-color: #530b7a;
+    color: white;
+}
+
+
+/* ----- Footer ----- */
+
+
+
+/* ----- General ----- */
+
