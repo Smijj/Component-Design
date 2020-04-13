@@ -5,7 +5,7 @@
 <title>The Onion</title>
 <link rel="stylesheet" href="style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,11 +33,43 @@
         </nav>
     </header>
 
+    
+		
     <div id="mainContainer" class="flexDirRow">
         <main class="flexDirColumn">
             <article id="mainArticleContainer" class="flexDirRow">
-                <!-- Featured Article Goes Here -->
-                <!-- Recent Articles Go Here -->
+                <article class="featureArticle flexDirColumn flexAlignCenter">
+                    <img class="featureArticleImg" src="onion.png" alt="Image Missing" />
+                    <h2 class="featuredArticleHeading textVerticalAlign">Featured Article</h2>
+                    <p class="featuredArticleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat. Non enim praesent elementum facilisis leo. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Id eu nisl nunc mi ipsum. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Sed ullamcorper morbi tincidunt ornare massa. Diam volutpat commodo sed egestas. Elit duis tristique sollicitudin nibh. Urna porttitor rhoncus dolor purus.</p>
+                </article>
+
+                <aside id="recentArticleContainer" class="flexDirColumn textVerticalAlign">
+                    <section class="flexDirRow">
+                        <article>
+                            <img class="articleImg" src="onion.png" alt="Image Missing" />
+                            <h2 class="articleHeading ">Recent Article 1</h2>
+                            <p class="articleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>
+                        <article>
+                            <img class="articleImg " src="onion.png" alt="Image Missing" />
+                            <h2 class="articleHeading ">Recent Article 2</h2>
+                            <p class="articleText ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>
+                    </section>
+                    <section class="flexDirRow">
+                        <article>
+                            <img class="articleImg" src="onion.png" alt="Image Missing" />
+                            <h2 class="articleHeading">Recent Article 3</h2>
+                            <p class="articleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>
+                        <article>
+                            <img class="articleImg" src="onion.png" alt="Image Missing" />
+                            <h2 class="articleHeading">Recent Article 4</h2>
+                            <p class="articleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>  
+                    </section>
+                </aside>
             </article>
 
             <article class="ad textVerticalAlign">
@@ -152,8 +184,19 @@
         </aside>
     </div>
 
-	<footer>
-        
+	<footer class="flexDirColumn flexAlignCenter">
+        <div class="footerLinks"> <a href="#">Jobs</a><a href="#">Temp</a><a href="#">Temp</a><a href="#">Temp</a> </div>
+        <p class="textVerticalAlign footerCopyright">The Onion is not intended for readers under 18 years of age. © 2020 Darwoon Developers.</p>
+        <div class="footerAccent"></div>
     </footer>
 
 
+</body>
+
+<script>
+        jQuery(document).ready(function($) {
+            $('*[data-href]').on('click', function() {
+                window.location = $(this).data("href");
+            });
+        });
+</script>
